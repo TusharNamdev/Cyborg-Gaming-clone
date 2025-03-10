@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Cyborg</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .navbar {
+            background-color: rgb(36, 35, 35);
+            /* width: 1330px; */
+            height: 2350px;
+        }
+
+        .box1 {
+            display: flex;
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: row;
+            padding-left: 25px;
+        }
+
+        .logo img {
+            /* padding-top: 5px; */
+            width: 200px;
+            height: 65px;
+        }
+
+        .search {
+            padding: 18px 10px 0px 60px;
+        }
+
+        .search input {
+            background-color: black;
+            font-size: 20px;
+            text-align: center;
+            border-radius: 10px;
+            color: aliceblue;
+        }
+
+        .home {
+            height: 60px;
+            width: 450px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-left: 150px;
+        }
+
+        .home a {
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: rgb(180, 177, 177);
+        }
+
+        .home1 a {
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: rgb(233, 76, 102);
+        }
+
+        /* a:hover {
+            color: black;
+            background-color: aliceblue;
+            border-radius: 10px;
+            padding: 5px 10px 5px 10px;
+        } */
+
+        .profile {
+            width: 120px;
+            height: 40px;
+            background-color: rgb(54, 52, 52);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            margin-left: 10px;
+            border-radius: 20px;
+            padding: 0px 15px 0px 15px;
+        }
+
+        .profile a {
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: rgb(180, 177, 177);
+            margin-right: 10px;
+        }
+
+        .profile img {
+            width: 30px;
+            height: 30px;
+            border-radius: 25px;
+            border: 2px solid black;
+        }
+
+        .box2 {
+            margin: 30px 40px 0px 30px;
+            height: 2130px;
+            background-color: rgb(70, 67, 67);
+            border-radius: 20px;
+            padding-top: 30px;
+        }
+
+        .b1 {
+            /* border: 2px solid red; */
+            margin-left: 30px;
+            margin-right: 30px;
+            height: 450px;
+            border-radius: 20px;
+            background-image: url(img1.jpeg);
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 40px;
+        }
+
+        .b1 p {
+            font-size: 20px;
+            font-family: sans-serif;
+            color: white;
+            padding-bottom: 20px;
+        }
+
+        .b1 h1 {
+            color: rgb(233, 76, 102);
+            font-weight: bold;
+            font-family: sans-serif;
+            font-size: 55px;
+        }
+
+        .b1 b {
+            color: white;
+            font-family: sans-serif;
+            font-size: 55px;
+        }
+
+        .browse {
+            text-decoration: none;
+            color: aliceblue;
+            /* font-weight: bold; */
+            font-family: sans-serif;
+            /* border: 2px solid white; */
+            background-color: rgb(233, 76, 102);
+            width: 150px;
+            border-radius: 20px;
+            padding: 5px 10px 5px 10px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .b2 {
+            /* border: 2px solid red; */
+            height: 770px;
+            margin: 50px 30px 0px 30px;
+            border-radius: 20px;
+            background-color: rgb(36, 35, 35);
+        }
+
+        .block {
+            display: flex;
+            flex-direction: row;
+            font-size: 30px;
+            width: 350px;
+            justify-content: space-between;
+            font-family: sans-serif;
+            font-weight: bold;
+            margin-left: 30px;
+            padding-top: 20px;
+        }
+
+        .m1 {
+            color: aliceblue;
+        }
+
+        .m2 {
+            color: rgb(233, 76, 102);
+        }
+
+        .card {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .card1 {
+            /* border: 2px solid green; */
+            margin: 20px;
+            height: 290px;
+            width: 250px;
+            background-color: rgb(53, 48, 48);
+            border-radius: 10px;
+        }
+
+        .card1 img {
+            width: 235px;
+            border-radius: 25px;
+            padding: 8px;
+            padding-top: 15px;
+        }
+
+        .text {
+            color: aliceblue;
+            font-size: 20px;
+            font-family: sans-serif;
+            padding: 15px 8px 5px 8px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .star {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .star img {
+            width: 20px;
+            height: 20px;
+            margin-top: -14px;
+
+        }
+
+        .text1 {
+            color: rgb(124, 121, 121);
+            font-size: 17px;
+            font-family: sans-serif;
+            padding: 0px 8px 5px 8px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .dow {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .dow img {
+            width: 25px;
+            height: 25px;
+            margin-top: -17px;
+        }
+
+        .discover {
+            font-family: sans-serif;
+            font-size: 25px;
+            background-color: rgb(233, 76, 102);
+            width: 300px;
+            text-align: center;
+            border-radius: 20px;
+            padding: 5px 10px 5px 10px;
+            margin-left: 450px;
+            margin-top: 30px;
+        }
+
+        .discover a {
+            color: rgb(247, 244, 244);
+            text-decoration: none;
+        }
+
+        /* 
+        a:hover {
+            color: black;
+            background-color: aliceblue;
+             width: 300px; 
+        } */
+        .b3 {
+            background-color: rgb(36, 35, 35);
+            height: 720px;
+            margin: 55px 30px 30px 30px;
+            border-radius: 20px;
+        }
+
+        .block2 {
+            display: flex;
+            flex-direction: row;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: sans-serif;
+            width: 300px;
+            justify-content: space-between;
+            padding: 20px 0px 10px 20px;
+        }
+
+        .h1 {
+            color: aliceblue;
+        }
+
+        .h2 {
+            color: rgb(233, 76, 102);
+        }
+
+        .card2 {
+            margin: 20px;
+            height: 580px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .card3 {
+            /* border: 2px solid red; */
+            padding: 10px 20px 10px 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .card3 img {
+            border-radius: 50px;
+        }
+
+        .c1 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .c2 {
+            color: aliceblue;
+            font-family: sans-serif;
+            font-weight: bold;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 600px;
+            font-size: 20px;
+        }
+
+        .c3 {
+            color: rgb(103, 104, 105);
+            font-family: sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 600px;
+        }
+
+        .d1 {
+
+            border: 2px solid rgb(68, 66, 66);
+            border-radius: 20px;
+            padding: 5px 10px 5px 10px;
+            width: 180px;
+            text-align: center;
+        }
+
+        .d1 a {
+            text-decoration: none;
+            font-family: sans-serif;
+            font-size: 25px;
+            color: rgb(103, 104, 105);
+        }
+
+        .d2 {
+            border: 2px solid rgb(233, 76, 102);
+            border-radius: 20px;
+            padding: 5px 10px 5px 10px;
+            width: 180px;
+            text-align: center;
+        }
+
+        .d2 a {
+            text-decoration: none;
+            font-family: sans-serif;
+            font-size: 25px;
+            color: rgb(233, 76, 102);
+        }
+
+        .box3 {
+            color: aliceblue;
+            font-family: sans-serif;
+            text-align: center;
+            padding-top: 30px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="box1">
+            <div class="logo">
+                <img src="im.jpeg" alt="logo">
+                <!-- <p>CYBORG</p> -->
+            </div>
+            <div class="search">
+                <form>
+                    <input type="search" placeholder="Type Something">
+                </form>
+            </div>
+            <div class="home">
+                <div class="home1">
+                    <a href="">Home</a>
+                </div>
+                <a href="">Browse</a>
+                <a href="">Details</a>
+                <a href="">Streams</a>
+            </div>
+            <div class="profile">
+                <a href="">Profile</a>
+                <img src="car.jpg">
+            </div>
+        </div>
+        <div class="box2">
+            <div class="b1">
+                <p>Welcome To Cyborg</p>
+                <h1>BROWSE</h1><b>OUR POPULAR <br>GAMES HERE</b>
+                <a class="browse" href="">Browse Now</a>
+            </div>
+            <div class="b2">
+                <div class="block">
+                    <div class="m1">
+                        <u>Most Popular </u>
+                    </div>
+                    <div class="m2">
+                        <p> Right Now</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card1">
+                        <img src="img2.jpeg" alt="Image Not Found">
+                        <div class="text">
+                            <p>Fortnite</p>
+                            <div class="star">
+                                <img src="star.png" alt="">
+                                <p>4.8</p>
+                            </div>
+                        </div>
+                        <div class="text1">
+                            <p>Sandbox</p>
+                            <div class="dow">
+                                <img src="dow.png" alt="">
+                                <p>2.3M</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <img src="img3.jpeg" alt="Image Not Found">
+                        <div class="text">
+                            <p>PubG</p>
+                            <div class="star">
+                                <img src="star.png" alt="">
+                                <p>4.8</p>
+                            </div>
+                        </div>
+                        <div class="text1">
+                            <p>Battle S</p>
+                            <div class="dow">
+                                <img src="dow.png" alt="">
+                                <p>2.3M</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <img src="img4.jpeg" alt="Image Not Found">
+                        <div class="text">
+                            <p>Dota2</p>
+                            <div class="star">
+                                <img src="star.png" alt="">
+                                <p>4.8</p>
+                            </div>
+                        </div>
+                        <div class="text1">
+                            <p>Steam-X</p>
+                            <div class="dow">
+                                <img src="dow.png" alt="">
+                                <p>2.3M</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <img src="img5.jpeg" alt="Image Not Found">
+                        <div class="text">
+                            <p>CS-GO</p>
+                            <div class="star">
+                                <img src="star.png" alt="">
+                                <p>4.8</p>
+                            </div>
+                        </div>
+                        <div class="text1">
+                            <p>Legendary</p>
+                            <div class="dow">
+                                <img src="dow.png" alt="">
+                                <p>2.3M</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <img src="img6.jpeg" alt="Image Not Found">
+                        <div class="text">
+                            <p>Mini Craft</p>
+                            <div class="star">
+                                <img src="star.png" alt="">
+                                <p>4.8</p>
+                            </div>
+                        </div>
+                        <div class="text1">
+                            <p>Legendary</p>
+                            <div class="dow">
+                                <img src="dow.png" alt="">
+                                <p>2.3M</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <img src="img7.jpeg" alt="Image Not Found">
+                        <div class="text">
+                            <p>Eagles Fly</p>
+                            <div class="star">
+                                <img src="star.png" alt="">
+                                <p>4.8</p>
+                            </div>
+                        </div>
+                        <div class="text1">
+                            <p>Matrix Games</p>
+                            <div class="dow">
+                                <img src="dow.png" alt="">
+                                <p>2.3M</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <img src="img8.jpeg" alt="Image Not Found">
+                        <div class="text">
+                            <p>Warface</p>
+                            <div class="star">
+                                <img src="star.png" alt="">
+                                <p>4.8</p>
+                            </div>
+                        </div>
+                        <div class="text1">
+                            <p>Max 3D</p>
+                            <div class="dow">
+                                <img src="dow.png" alt="">
+                                <p>2.3M</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <img src="img9.jpeg" alt="Image Not Found">
+                        <div class="text">
+                            <p>Warcraft</p>
+                            <div class="star">
+                                <img src="star.png" alt="">
+                                <p>4.8</p>
+                            </div>
+                        </div>
+                        <div class="text1">
+                            <p>Legend</p>
+                            <div class="dow">
+                                <img src="dow.png" alt="">
+                                <p>2.3M</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="discover">
+                    <a href="">Discover Popular</a>
+                </div>
+            </div>
+            <div class="b3">
+                <div class="block2">
+                    <div class="h1">
+                        <u>Your Gaming</u>
+                    </div>
+                    <div class="h2">
+                        <p>Library</p>
+                    </div>
+                </div>
+                <div class="card2">
+                    <div class="card3">
+                        <img src="img6.jpeg" alt="Image Not Found">
+                        <div class="c1">
+                            <div class="c2">
+                                <p>Dota2</p>
+                                <p>Date Added</p>
+                                <p>Hours Played</p>
+                                <p>Currently</p>
+                            </div>
+                            <div class="c3">
+                                <p>Sandbox</p>
+                                <p>24/08/2036</p>
+                                <p>634 H 22 Mins</p>
+                                <p>Downloaded</p>
+                            </div>
+                        </div>
+                        <div class="d1">
+                            <a href="">Downloaded</a>
+                        </div>
+                    </div>
+                    <div class="card3">
+                        <img src="img2.jpeg" alt="Image Not Found">
+                        <div class="c1">
+                            <div class="c2">
+                                <p>Fortnite</p>
+                                <p>Date Added</p>
+                                <p>Hours Played</p>
+                                <p>Currently</p>
+                            </div>
+                            <div class="c3">
+                                <p>Sandbox</p>
+                                <p>22/06/2036</p>
+                                <p>740 H 52 Mins</p>
+                                <p>Downloaded</p>
+                            </div>
+                        </div>
+                        <div class="d2">
+                            <a href="">Download</a>
+                        </div>
+                    </div>
+                    <div class="card3">
+                        <img src="img5.jpeg" alt="Image Not Found">
+                        <div class="c1">
+                            <div class="c2">
+                                <p>CS-GO</p>
+                                <p>Date Added</p>
+                                <p>Hours Played</p>
+                                <p>Currently</p>
+                            </div>
+                            <div class="c3">
+                                <p>Legendary</p>
+                                <p>21/04/2036</p>
+                                <p>892 H 14 Mins</p>
+                                <p>Downloaded</p>
+                            </div>
+                        </div>
+                        <div class="d1">
+                            <a href="">Downloaded</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="discover">
+                    <a href="">View Your Library</a>
+                </div>
+            </div>
+        </div>
+        <div class="box3">
+            <p>Copyright * 2036 Cyborg Gaming Comoany.All rights reserved</p>
+            <u>Design:Tushar Namdev </u>
+        </div>
+    </div>
+</body>
+
+</html>
